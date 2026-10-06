@@ -5,6 +5,11 @@ run-name: Action
 "on":
   push:
   pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
 
 permissions:  # added using https://github.com/step-security/secure-repo
   contents: read
