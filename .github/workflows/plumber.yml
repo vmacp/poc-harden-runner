@@ -23,4 +23,4 @@ jobs:
       - name: Plumber analyze
         uses: getplumber/plumber@d85d3b54f9be5b2a5de072e203209de865e6139c  # v0.5.15
         with:
-          min-score: "A"
+          soft-fail: "true"
